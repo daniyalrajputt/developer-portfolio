@@ -9,8 +9,8 @@ export default (props) => {
             <div className="menu-bar">
                 <NavLink activeClassName='selected' to='home'><span className="slash">/</span>Home<span className="slash">/</span></NavLink>
                 <NavLink activeClassName='selected' to='about'><span className="slash">/</span>About<span className="slash">/</span></NavLink>
-                {/* <NavLink activeClassName='selected' to=''><span className="slash">/</span>Work<span className="slash">/</span></NavLink>
-                <NavLink activeClassName='selected' to=''><span className="slash">/</span>Contact Me<span className="slash">/</span></NavLink> */}
+                <NavLink activeClassName='selected' to='work'><span className="slash">/</span>Work<span className="slash">/</span></NavLink>
+                <NavLink activeClassName='selected' to='contact'><span className="slash">/</span>Contact Me<span className="slash">/</span></NavLink>
                 <button>breif me <span>/&gt;</span></button>
             </div>
         </div>
