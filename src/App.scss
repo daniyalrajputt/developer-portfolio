@@ -1,6 +1,8 @@
 *{
   box-sizing: border-box;
   font-family: 'Source Code Pro', monospace;
+  margin: 0;
+  
 }
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -15,4 +17,7 @@
   to {
     transform: rotate(360deg);
   }
+}
+.container{
+  margin-top: 60px
 }

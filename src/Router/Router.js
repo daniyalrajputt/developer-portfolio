@@ -1,7 +1,8 @@
 import React from "react";
 import {
     BrowserRouter as Router,
-    Route,
+    Switch,
+    Route
 } from "react-router-dom";
 import Home from '../container/Home/index'
 import Navbar from "../components/Navbar/navbar";
@@ -11,16 +12,22 @@ import Contact from '../container/Contact/index'
 
 export default function App() {
     return (
-        <div>
-            <Router>
-                <Navbar />
-                <div>
-                    <Route exact path="home" component={Home}></Route>
-                    <Route path="about" component={About}></Route>
-                    <Route path="work" component={Work}></Route>
-                    <Route path="contact" component={Contact}></Route>
-                </div>
-            </Router>
-        </div>
+        <Router>
+            <Navbar />
+            <Switch>
+                <Route path="/about">
+                    <About />
+                </Route>
+                <Route path="/contact">
+                    <Contact />
+                </Route>
+                <Route path="/work">
+                    <Work />
+                </Route>
+                <Route path="/">
+                    <Home />
+                </Route>
+            </Switch>
+        </Router>
     );
 }
