@@ -1,0 +1,92 @@
+@import "../../Theme/variables.scss";
+
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-primary;
+    height: 92vh;
+    width: 100%;
+    .left-side{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .content{
+            max-width: 500px;
+            max-height: 500px;
+            h1{
+                color: $color-light;
+                font-size: 55px;
+                margin: 0;
+                font-weight: 500;
+            }
+            p{
+                color: $color-light;
+                margin: 25px 0px
+            }
+            .contact-btn{
+                background-color: $color-secondary;
+                color: $color-primary;
+                border:     2px solid $color-primary;
+                font-weight: 600;
+                transition: ease-in .3s;
+                &:hover{
+                    background-color: $color-primary;
+                    color: $color-light;
+                    border: 2px solid $color-secondary;
+                }
+            }
+        }
+        .social-links{
+            margin-top: 25px;
+            max-width: 500px;
+            display: flex;
+            justify-content: space-between;
+            a{
+                margin-right: 25px;
+                display: block;
+                color: $color-light;
+                max-width: 100px;
+                transition: ease-in .3s;
+                cursor: pointer;
+                background-image: linear-gradient(180deg, transparent 85%, $color-secondary 0);
+                background-repeat: no-repeat;
+                background-size: 0 100%;
+                transition: background-size .4s ease;
+                i{
+                    margin-right: 5px
+                }
+                &:hover{
+                    background-size: 100% 100%;
+                    color: $color-secondary;
+                    // text-decoration: underline;
+                }
+            }
+        }
+    }
+    .right-side{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .image-container{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+            width: 75%;
+            max-width: 500px;
+            min-width: 250px;
+            height: 75%;
+            max-height: 500px;
+            min-height: 250px;
+            border-radius: 50%;
+            }
+        }
+    }
+}
