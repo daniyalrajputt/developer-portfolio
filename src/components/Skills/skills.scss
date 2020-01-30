@@ -1,0 +1,90 @@
+@import "../../Theme/variables.scss";
+
+
+.skills-section{
+    background-color: $color-primary;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    .heading{
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        height: 12%;
+        align-items: flex-end;
+
+        .left-side{
+            width: 50%;
+            height: 50px;
+            display: flex;
+            align-items: flex-end;
+            h1{
+                color: $color-light;
+                margin: 0;
+                line-height: 1;
+            }
+        }
+        .right-side{
+            width: 50%;
+            height: 50px;
+            .line{
+                width: 100%;
+                height: 50px;
+                background-image: linear-gradient(180deg, transparent 85%, $color-secondary 0);
+                background-repeat: no-repeat;
+                background-size: 100%;
+                transition: background-size .4s ease;
+            }
+        }
+    }
+    .skills-content{
+        width: 80%;
+        margin: 0 auto;
+        height: 70%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        .skill-item{
+            width: 175px;
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            &:hover {
+                .tooltiptext {
+                    visibility: visible;
+              }
+              img{
+                filter: grayscale(0%);
+                opacity: 1.0;
+            }
+            }
+            img{
+                width: 100px;
+                filter: grayscale(200%);
+                opacity: 0.5;
+                transition: 0.2s ease-in;
+            }
+            .tooltiptext{
+                visibility: hidden;
+                width: max-content;
+                background-color: black;
+                color: #fff;
+                text-align: center;
+                border-radius: 8px;
+                padding: 5px;
+                transition: 0.2s ease-in;
+
+            /* Position the tooltip */
+                position: absolute;
+                z-index: 1;
+                bottom: -40px
+            }
+        }
+        
+    }
+}
