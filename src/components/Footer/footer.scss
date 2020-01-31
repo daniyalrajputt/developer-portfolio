@@ -1,0 +1,97 @@
+@import "../../Theme/variables.scss";
+
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-secondary;
+    height: 65vh;
+    width: 100%;
+    .left-side{
+        width: 55%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .content{
+            max-width: 600px;
+            max-height: 500px;
+            h1{
+                color: $color-primary;
+                font-size: 34px;
+                margin: 0;
+                font-weight: 900;
+            }
+            p{
+                color: $color-light;
+                margin: 25px 0px
+            }
+            .contact-btn{
+                background-color: $color-secondary;
+                color: $color-primary;
+                border:     2px solid $color-primary;
+                font-weight: 600;
+                transition: ease-in .3s;
+                &:hover{
+                    background-color: $color-primary;
+                    color: $color-light;
+                    border: 2px solid $color-secondary;
+                }
+            }
+        }
+        .social-links{
+            margin-top: 25px;
+            max-width: 500px;
+            display: flex;
+            justify-content: space-between;
+            a{
+                margin-right: 25px;
+                display: block;
+                color: $color-primary;
+                max-width: 100px;
+                transition: ease-in .3s;
+                cursor: pointer;
+                background-image: linear-gradient(180deg, transparent 85%, $color-light 0);
+                background-repeat: no-repeat;
+                background-size: 0 100%;
+                transition: background-size .4s ease;
+                i{
+                    margin-right: 5px
+                }
+                &:hover{
+                    background-size: 100% 100%;
+                    color: $color-light;
+                    // text-decoration: underline;
+                }
+            }
+        }
+    }
+    .right-side{
+        width: 45%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        div{
+            height: 125px;
+            display: flex;
+            align-items: flex-end;
+            p{
+                color: $color-primary;
+                font-size: 16px;
+                margin: 0;
+                font-weight: 600;
+                z-index: 2;
+            }
+        }
+        &:before{
+            position: absolute;
+            content: '</>';
+            font-size: 50vh;
+            font-weight: 900;
+            color: $color-light;
+            opacity: 0.5;
+        }
+    }
+}
