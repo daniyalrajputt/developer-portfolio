@@ -90,3 +90,41 @@
         }
     }
 }
+
+
+
+
+
+@media (max-width: 1023px) {
+    .header{
+        flex-wrap: wrap-reverse;
+        height: 100%;
+        width: 100%;
+    .left-side{
+        width: 100%;
+        .content{
+            max-width: 90%;
+            max-height: 90%;
+            h1{
+                font-size: 44px;
+            }
+            p{
+                color: $color-light;
+                margin: 25px 0px
+            }
+            .contact-btn{
+                background-color: $color-secondary;
+                color: $color-primary;
+                border:     2px solid $color-primary;
+                font-weight: 600;
+                transition: ease-in .3s;
+                &:hover{
+                    background-color: $color-primary;
+                    color: $color-light;
+                    border: 2px solid $color-secondary;
+                }
+            }
+        }
+    }
+    }
+}

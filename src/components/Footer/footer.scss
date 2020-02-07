@@ -95,3 +95,28 @@
         }
     }
 }
+
+
+
+
+@media (max-width: 1023px) {
+    .footer{
+        flex-direction: column;
+        height: 60vh;
+        .left-side{
+            width: 100%;
+        }
+        .right-side{
+            // height: 200px;
+            &:before{
+                position: absolute;
+                content: '</>';
+                font-size: 50vh;
+                bottom: -90px;
+                font-weight: 900;
+                color: #ffffff;
+                opacity: 0.3;
+            }
+        }
+    }
+}

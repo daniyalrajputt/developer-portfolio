@@ -3,14 +3,14 @@ import './index.scss'
 
 function Education() {
     return (
-        <div className="about-section">
+        <div className="edu-section">
             <div className="heading">
                 <div className="left-side"><h1>Education History</h1></div>
                 <div className="right-side">
                     <div className="line"></div>
                 </div>
             </div>
-            <div className="about-content">
+            <div className="edu-content">
                 <div className="right-side">
                     <div className="list-item">
                         <div>
