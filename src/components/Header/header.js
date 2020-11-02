@@ -7,7 +7,8 @@ function Header() {
     <div className="header">
       <div className="left-side">
         <div className="content">
-          <h1>Bring your brand to Life with our <br /> help</h1>
+          <h1>Frontend UI Developer</h1>
+          <p>Bring your brand to Life with our help</p>
           <p>A guy who loves Coding, Travelling, Sunsets, Beaches and waking up early in the morning. <br />
             ~ Software Engineer</p>
           <button className="contact-btn">Contact Me /&gt;</button>
